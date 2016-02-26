@@ -1,0 +1,70 @@
+<h2>Der Schatz vor unserer Haustür</h2>
+<h3>Der Spessart ist unsere Heimat. Doch was ist Heimat eigentlich?</h3>
+
+<!--<div class="jumbotron">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">
+        <img src="images/yeoman.png" alt="I'm Yeoman">
+        <br>Always a pleasure scaffolding your apps.
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a>
+    </p>
+</div>-->
+
+<div>
+    <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+        <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <!--<h4>Slide {{slide.id}}</h4>-->
+                <p>{{slide.text}}</p>
+            </div>
+        </uib-slide>
+    </uib-carousel>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <h4>Heimat</h4>
+        <!--<div class="row"></div>-->
+        <p>
+            <a ng-href="#/calendar">
+                <img src="images/banner_SPESSART1.png" class="img-rounded pull-right" alt="Kalender">
+            </a>
+            Heimat ist komplex und für jeden etwas anderes. Vielleicht ist Heimat einer der letzten Räume, die wir zu pflegen bereit sind, weil sie uns in einer besonderen Tiefe verbindet. Heimat bedeutet, mitten im ständigen Konsumkarussell dieser Zeit auch einmal barfuß über eine Wiese zu laufen. Heimat ist da, wo dir das Herz aufgeht.
+
+        </p>
+        <hr>
+
+        <h4>Der Tischkalender gibt es in:</h4>
+        
+            <dl class="dl-horizontal">
+                <dt>Partenstein</dt><dd>Bäckerei Steigerwald</dd>
+                <dt>Lohr</dt><dd>BücherEcke, Lohrer Echo</dd>
+                <dt>Frammersbach</dt>
+                <dd>Drogerie Heimbach</dd>
+                <dt>Gemünden</dt>
+                <dd>Markt-Apotheke</dd>
+                <dt>Karlstadt</dt>
+                <dd>BücherEcke</dd>
+                <dt>Marktheidenfeld</dt>
+                <dd>Kaufhaus Intakt</dd>
+                <dt>Schöllkrippen</dt>
+                <dd>Lesekatze</dd>
+                <dt>Aschaffenburg</dt>
+                <dd>Buchhandlung Diekmann, Spessartbund</dd>
+                <dt>Würzburg</dt>
+                <dd>uchladen Neuer Weg, Buchhandlung Knoth</dd>
+            </dl>
+    
+    </div>
+    <div class="col-md-4">
+        <br>
+        <p>
+            Was können wir tun, um unseren Kindern eine intakte Natur zu hinterlassen? Den effektivsten Schutz bilden <a href="https://de.wikipedia.org/wiki/Nationalparks_in_Deutschland" target="_blank">Nationalparks</a>. Sie können auf eine lange Erfolgsgeschichte zurückblicken.
+        </p>
+
+        <div ng-include src="'views/partial.book.html'"></div>
+    </div>
+
+</div>
