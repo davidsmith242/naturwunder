@@ -97,7 +97,7 @@ body {
     padding-bottom: 20px;
 }
 
-.content, .content p{
+.content, .content p, .dl-horizontal{
     color: #cecece;
     font-family: 'Open Sans', sans-serif; 
     font-size: 14px; 
@@ -121,6 +121,10 @@ body {
 .well h4{
     font-size: 105%;
     color: #d6901e;
+}
+
+.imgcenter .img-responsive {
+    margin: 0 auto;
 }
 
 /* Custom page footer */
