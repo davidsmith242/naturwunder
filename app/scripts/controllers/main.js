@@ -18,7 +18,7 @@ angular.module('wunderApp')
         for (var i = 0; i <= 20; i++) {
             slides.push({
                 image: 'images/slideshow/d_spessart_'+i+'.jpg',
-                text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 50],
+                //text: ['Nice image', 'Awesome photograph', 'That is so cool', 'I love that'][slides.length % 50],
                 id: currIndex++
             });
         }
